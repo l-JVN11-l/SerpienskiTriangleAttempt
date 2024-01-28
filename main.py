@@ -3,7 +3,7 @@ import sys
 from random import randint
 
 # Reset Recursion Limit
-sys.setrecursionlimit(75000)
+sys.setrecursionlimit(100000)
 
 # Fullscreen the canvas
 screen = turtle.Screen()
@@ -14,7 +14,7 @@ t = turtle.Turtle()
 t.speed(0)
 lpb = []
 
-pen_thickness = 5
+pen_thickness = 2
 
 t.pu()
 t.color("black")
@@ -57,7 +57,7 @@ def main(point1=(0,0)):
   t.dot(pen_thickness)
   t.pu()
 
-  if len(lpb) < 50000:
+  if len(lpb) < 75000:
     main(currPoint)
 
 # Start the program
